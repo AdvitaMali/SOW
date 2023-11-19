@@ -1,0 +1,192 @@
+@import url('https://unpkg.com/bootstrap/dist/css/bootstrap.min.css');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.textBottom {
+  -webkit-text-fill-color: #887C68;
+  height: 79px;
+  padding: 14px;
+  ;
+}
+
+.card {
+  border-radius: 0px;
+  height: 552px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-body {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-overflow: clip;
+  -webkit-text-fill-color: #887C68;
+}
+
+
+.card-img-top {
+  height: 292px;
+  border-radius: 0px;
+}
+
+.display-2 {
+  text-align: center;
+  -webkit-text-fill-color: #887C68;
+  font-size: 15px;
+  font-weight: bold
+}
+
+.corouselBlock {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.carousel-controls {
+  list-style: none;
+  display: none;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  bottom: -50px;
+  padding: 0;
+}
+
+.carousel-control {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.carousel-control.active {
+  background: black;
+}
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 860px;
+  margin: 0 auto;
+}
+
+.carousel-viewport {
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.slide {
+  width: 33.3%;
+  flex-shrink: 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 450px) {
+  .carousel-wrapper {
+    width: 100%;
+  }
+  .slide {
+    width: 100%;
+  }
+}
+
+.carousel-window {
+  width: calc(100% - 130px);
+  overflow: hidden;
+}
+
+.sample-slide {
+  background: blue;
+  color: white;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.control {
+  width: 50px;
+  height: 50px;
+  background: #999;
+  position: relative;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+  opacity: 0.8;
+}
+
+.control:hover {
+  opacity: 1;
+}
+
+.control.right {
+  margin-left: 15px;
+}
+
+.control.right:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  height: 8px;
+  width: 8px;
+  display: block;
+  transform: rotate(318deg);
+}
+
+.control.left {
+  margin-left: 15px;
+}
+
+.control.inactive {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.control.left:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  height: 8px;
+  width: 8px;
+  display: block;
+  transform: rotate(130deg);
+}
+
+
+
+.text{
+  width: 100%;
+  position: relative;
+  margin-top: -20px;
+  }
+  
+  .text h6{
+  text-align: center;
+  color: rgb(243, 238, 238);
+  font-size: 12px;
+  
+  }
